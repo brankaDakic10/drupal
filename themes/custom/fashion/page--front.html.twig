@@ -1,0 +1,44 @@
+{# <div class="layout-container"> #}
+{% include directory ~ '/partials/header.html.twig' %}
+ 
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+		
+
+    <div class="layout-content"> 
+
+       
+      {{ page.content }}
+    </div>
+    {# </div>/.layout-content #}
+
+
+
+
+  </main>
+  </div>
+{% include directory ~ '/partials/footer.html.twig' %}
+	<!-- subscribe block -->
+		<div class="subscribe-block">
+			<h2>Subscribe to our newsletter</h2>
+			<p>Subscribe to our newsletter and get 10% off on your first order.</p>
+			<form action="">
+				<input type="email" placeholder="E-mail address">
+				<div class="form-item checkbox">
+					<input id="man" type="checkbox" name="category" value="">
+					<label class="form-checkbox" for="man">Man</label>
+				</div>
+				<div class="form-item checkbox">
+					<input id="women" type="checkbox" name="category" value="">
+					<label class="form-checkbox" for="women">Women</label>
+				</div>
+				<button type="submit" class="btn btn-black btn-big">Subscribe</button>
+			</form>
+			<a href="javascript:;" class="icon font-ico-close-big js-subscribe-close"></a>
+		</div>
+	{# </div> #}
+	<!-- javascript -->
+	<script type="text/javascript" src="assets/scripts/libs/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/helper.js"></script>
+	<script type="text/javascript" src="assets/scripts/default.js"></script>
